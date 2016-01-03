@@ -1,7 +1,7 @@
 # films (tvOS Edition)
 A Swift 2 tvOS 9 app that uses the Movie Database (TMDb) API to provide a Collection View of popular movies.
 
-![](https://github.com/duliodenis/films-tvOS/blob/master/art/screenshot/films.gif)
+![](https://github.com/duliodenis/films-tvOS/blob/master/art/screenshot/films2.gif)
 
 ### Licensing
 films tvOS is licensed under [the MIT License](https://github.com/duliodenis/films-tvOS/blob/master/LICENSE).
