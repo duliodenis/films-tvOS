@@ -12,6 +12,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let defaultSize = CGSizeMake(268, 412) // the Film's Poster Default Size when not in focus
+    let inFocusSize = CGSizeMake(295, 454) // 10% increase for when it is in focus
+    
     var films = [Film]()
     
     
@@ -82,6 +85,23 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             }
         }
         task.resume()
+    }
+    
+    
+    // MARK: Focus Related Function
+    
+    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+        if let previous = context.previouslyFocusedView as? FilmCell {
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                previous.filmPoster.frame.size = self.defaultSize
+            })
+        }
+        
+        if let next = context.nextFocusedView as? FilmCell {
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                next.filmPoster.frame.size = self.inFocusSize
+            })
+        }
     }
 }
 
