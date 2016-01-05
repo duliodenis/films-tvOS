@@ -36,6 +36,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier(REUSE_ID_COLLECTIONVIEW, forIndexPath: indexPath) as? FilmCell {
             let film = films[indexPath.row]
             cell.configureCell(film)
+            
+            // Add a select tap gesture recognizer if there is not one already there
+            if cell.gestureRecognizers?.count == nil {
+                let tap = UITapGestureRecognizer(target: self, action: "tapped:")
+                tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
+                cell.addGestureRecognizer(tap)
+            }
+            
             return cell
         } else {
             return FilmCell()
@@ -101,6 +109,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 next.filmPoster.frame.size = self.inFocusSize
             })
+        }
+    }
+    
+    
+    // MARK: Tap Gesture Recognizer Function
+    
+    func tapped(gesture: UITapGestureRecognizer) {
+        if let cell = gesture.view as? FilmCell {
+            print("Tapped \(cell.filmTitle.text)")
         }
     }
 }
