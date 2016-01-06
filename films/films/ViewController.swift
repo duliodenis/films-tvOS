@@ -117,7 +117,21 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func tapped(gesture: UITapGestureRecognizer) {
         if let cell = gesture.view as? FilmCell {
-            print("Tapped \(cell.filmTitle.text)")
+            performSegueWithIdentifier("FilmDetailVC", sender: cell)
+        }
+    }
+    
+    
+    // MARK: Navigation Function
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "FilmDetailVC" {
+            if let detailVC = segue.destinationViewController as? FilmDetailVC {
+                if let film = sender as? FilmCell {
+                    detailVC.film = film
+                }
+            }
+            
         }
     }
 }
