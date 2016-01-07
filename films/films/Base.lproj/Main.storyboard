@@ -141,10 +141,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baP-my-waj">
+                                <rect key="frame" x="1248" y="959" width="188" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="dvf-pd-nqC"/>
+                                    <constraint firstAttribute="width" constant="188" id="ez4-Lb-Xdy"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Trailer"/>
+                                <connections>
+                                    <segue destination="3xL-VC-APP" kind="show" id="g59-ew-oyY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="YQd-87-DcR" firstAttribute="top" secondItem="baP-my-waj" secondAttribute="bottom" constant="35" id="0kB-uZ-xFj"/>
                             <constraint firstItem="5Sg-Fn-Png" firstAttribute="top" secondItem="NVL-YW-ZGO" secondAttribute="bottom" constant="23" id="FH0-K0-im0"/>
                             <constraint firstItem="SFW-vm-3Fv" firstAttribute="top" secondItem="oir-N8-Siu" secondAttribute="bottom" constant="100" id="Hbc-XG-HR1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="baP-my-waj" secondAttribute="trailing" constant="464" id="KUi-I7-QsQ"/>
                             <constraint firstItem="YQd-87-DcR" firstAttribute="top" secondItem="SFW-vm-3Fv" secondAttribute="bottom" constant="35" id="KpR-Tl-SRJ"/>
                             <constraint firstItem="4TK-rR-Q8n" firstAttribute="top" secondItem="oir-N8-Siu" secondAttribute="bottom" constant="20" id="NTS-Jz-N0e"/>
                             <constraint firstItem="NVL-YW-ZGO" firstAttribute="leading" secondItem="eZq-rt-0YL" secondAttribute="leadingMargin" id="YJi-Tw-gXU"/>
@@ -171,6 +185,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Mu-bg-CP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="536" y="1500"/>
+        </scene>
+        <!--TrailerVC-->
+        <scene sceneID="Dd0-5j-0m0">
+            <objects>
+                <viewController id="3xL-VC-APP" customClass="TrailerVC" customModule="films" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ni9-4t-Ujl"/>
+                        <viewControllerLayoutGuide type="bottom" id="OkV-D6-mqL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NRh-gm-hLD">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvz-Ug-wNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="2804"/>
         </scene>
     </scenes>
     <resources>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C0F46CE1C3C5C8800DEC116 /* FilmDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0F46CD1C3C5C8800DEC116 /* FilmDetailVC.swift */; };
+		6C6D8CF41C3D8B33007B6440 /* TrailerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D8CF31C3D8B33007B6440 /* TrailerVC.swift */; };
 		6CB4D9A21C385255000E448C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4D9A11C385255000E448C /* AppDelegate.swift */; };
 		6CB4D9A41C385255000E448C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4D9A31C385255000E448C /* ViewController.swift */; };
 		6CB4D9A71C385255000E448C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB4D9A51C385255000E448C /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		6C0F46CD1C3C5C8800DEC116 /* FilmDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmDetailVC.swift; sourceTree = "<group>"; };
+		6C6D8CF31C3D8B33007B6440 /* TrailerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailerVC.swift; sourceTree = "<group>"; };
 		6CB4D99E1C385255000E448C /* films.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = films.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB4D9A11C385255000E448C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CB4D9A31C385255000E448C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				6CB4D9A11C385255000E448C /* AppDelegate.swift */,
 				6CB4D9A31C385255000E448C /* ViewController.swift */,
 				6C0F46CD1C3C5C8800DEC116 /* FilmDetailVC.swift */,
+				6C6D8CF31C3D8B33007B6440 /* TrailerVC.swift */,
 				6CB4D9B01C386065000E448C /* FilmCell.swift */,
 				6CB4D9B41C38779F000E448C /* Film.swift */,
 				6CB4D9B21C386E34000E448C /* Constants.swift */,
@@ -147,6 +150,7 @@
 				6CB4D9B11C386065000E448C /* FilmCell.swift in Sources */,
 				6CB4D9A41C385255000E448C /* ViewController.swift in Sources */,
 				6C0F46CE1C3C5C8800DEC116 /* FilmDetailVC.swift in Sources */,
+				6C6D8CF41C3D8B33007B6440 /* TrailerVC.swift in Sources */,
 				6CB4D9A21C385255000E448C /* AppDelegate.swift in Sources */,
 				6CB4D9B31C386E34000E448C /* Constants.swift in Sources */,
 			);
